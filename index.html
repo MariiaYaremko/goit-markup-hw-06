@@ -441,8 +441,9 @@
           </svg>
         </button>
         <form action="#" method="GET" class="js-speaker form" autocomplete="off">
-          <label class="contact-form__text" for="name">Имя</label>
+          
           <span class="contact-form__field">
+            <label class="contact-form__text" for="name">Имя</label>
             <input
               class="contact-form__input"
               type="text"
@@ -454,8 +455,9 @@
               <use href="./images/icons.svg#icon-form_person_black"></use>
             </svg>
           </span>
-          <label class="contact-form__text" for="tel">Телефон</label>
+          
           <span class="contact-form__field">
+            <label class="contact-form__text" for="tel">Телефон</label>
             <input
               class="contact-form__input"
               type="tel"
@@ -464,11 +466,12 @@
               placeholder=""
             />
             <svg class="contact-form__img">
-              <use href="./images/icons.svg#icon-form_person_black"></use>
+              <use href="./images/icons.svg#icon-form_phone_black"></use>
             </svg>
           </span>
-          <label class="contact-form__text" for="mail">Почта</label>
+         
           <span class="contact-form__field">
+            <label class="contact-form__text" for="mail">Почта</label>
             <input
               class="contact-form__input"
               type="email"
@@ -477,24 +480,11 @@
               placeholder=""
             />
             <svg class="contact-form__img">
-              <use href="./images/icons.svg#icon-form_person_black"></use>
+              <use href="./images/icons.svg#icon-form_email_black"></use>
             </svg>
           </span>
           <label class="contact-form__text" for="comment">Комментарий</label>
-          <!-- <textarea
-           class="comment"
-           name="comment"
-           id="comment"
-           placeholder="Введите текст">
-           </textarea> -->
-          <textarea
-            class="comment"
-            name="comment"
-            id="comment"
-            rows="8"
-            placeholder="Введите текст"
-          >
-          </textarea>
+             <textarea class="comment" name="comment" id="comment" placeholder="Введите текст"></textarea>
 
           <div class="form-checkbox">
             <input
@@ -509,13 +499,10 @@
             </svg>
             <label
               class="checkbox__text"
-              for="Соглашаюсь с рассылкой и принимаю Условия договора"
-            >
-              <span
-                >Соглашаюсь с рассылкой и принимаю
-                <a class="underline">Условия договора</a></span
-              ></label
-            >
+              for="Соглашаюсь с рассылкой и принимаю Условия договора">
+              <span class="consent">Соглашаюсь с рассылкой и принимаю
+                <a class="underline">Условия договора</a></span>
+            </label>
           </div>
           <div class="form-button">
             <button class="button" type="submit">Отправить</button>
