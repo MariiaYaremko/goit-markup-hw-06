@@ -430,6 +430,30 @@
             </li>
           </ul>
         </div>
+        <div class="subscription">
+          <p class="subscription__title">Подпишитесь на рассылку</p>
+         <div class="subscription__group">
+          <label class="subscription__content">
+            <input
+              class="subscription__input"
+              type="text"
+              name="subscription"
+              placeholder="E-mail"
+            />
+          </label>
+          <div class="subscription__button">
+            <button class="button" type="submit">Подписаться   
+              <svg class="subscription__icon">
+                <use href="./images/icons.svg#icon-icon_send"></use>
+              </svg>
+
+            </button>
+            <!-- <svg class="subscription__icon">
+              <use href="./images/icons.svg#icon-icon_send"></use>
+            </svg> -->
+          </div>
+        </div>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -487,12 +511,12 @@
              <textarea class="comment" name="comment" id="comment" placeholder="Введите текст"></textarea>
 
              <label class="form-checkbox">
-            <input class="checkbox" type="checkbox" name="consent"
-              value="Соглашаюсь с рассылкой и принимаю Условия договора"/>
-              <span class="form-checkbox-icon"></span>
-              <span class="consent">Соглашаюсь с рассылкой и принимаю
-                <a class="underline">Условия договора</a></span>
-            </label>
+              <input class="checkbox" type="checkbox" name="consent"
+                value="Соглашаюсь с рассылкой и принимаю Условия договора"/>
+                <span class="form-checkbox-icon"></span>
+                <span class="consent">Соглашаюсь с рассылкой и принимаю
+                  <a class="underline">Условия договора</a></span>
+              </label>
           
           <div class="form-button">
             <button class="button" type="submit">Отправить</button>
