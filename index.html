@@ -436,33 +436,66 @@
       <div class="modal">
         <p class="modal-title__text">Оставьте свои данные, мы вам перезвоним</p>
         <button data-modal-close class="close">
-          <svg width="11" height="11">
+          <svg width="11" height="11" class="icon-vector">
             <use href="./images/icons.svg#icon-vector"></use>
           </svg>
         </button>
-        <form action="#" method="GET" class="js-speaker form">
+        <form action="#" method="GET" class="js-speaker form" autocomplete="off">
           <label class="contact-form__text" for="name">Имя</label>
-          <input
-            class="contact-form__input"
-            type="text"
-            name="name"
-            id="name"
-          />
+          <span class="contact-form__field">
+            <input
+              class="contact-form__input"
+              type="text"
+              name="name"
+              id="name"
+              placeholder=""
+            />
+            <svg class="contact-form__img">
+              <use href="./images/icons.svg#icon-form_person_black"></use>
+            </svg>
+          </span>
           <label class="contact-form__text" for="tel">Телефон</label>
-          <input class="contact-form__input" type="tel" name="tel" id="tel" />
+          <span class="contact-form__field">
+            <input
+              class="contact-form__input"
+              type="tel"
+              name="tel"
+              id="tel"
+              placeholder=""
+            />
+            <svg class="contact-form__img">
+              <use href="./images/icons.svg#icon-form_person_black"></use>
+            </svg>
+          </span>
           <label class="contact-form__text" for="mail">Почта</label>
-          <input
-            class="contact-form__input"
-            type="email"
-            name="mail"
-            id="mail"
-          />
+          <span class="contact-form__field">
+            <input
+              class="contact-form__input"
+              type="email"
+              name="mail"
+              id="mail"
+              placeholder=""
+            />
+            <svg class="contact-form__img">
+              <use href="./images/icons.svg#icon-form_person_black"></use>
+            </svg>
+          </span>
           <label class="contact-form__text" for="comment">Комментарий</label>
+          <!-- <textarea
+           class="comment"
+           name="comment"
+           id="comment"
+           placeholder="Введите текст">
+           </textarea> -->
           <textarea
-            class="contact-form-input-comment"
+            class="comment"
             name="comment"
             id="comment"
-          ></textarea>
+            rows="8"
+            placeholder="Введите текст"
+          >
+          </textarea>
+
           <div class="form-checkbox">
             <input
               class="checkbox"
@@ -477,13 +510,16 @@
             <label
               class="checkbox__text"
               for="Соглашаюсь с рассылкой и принимаю Условия договора"
-              > 
-              <span>Соглашаюсь с рассылкой и принимаю <a class="underline">Условия договора</a></span></label
+            >
+              <span
+                >Соглашаюсь с рассылкой и принимаю
+                <a class="underline">Условия договора</a></span
+              ></label
             >
           </div>
           <div class="form-button">
-          <button class="button" type="submit">Отправить</button>
-        </div>
+            <button class="button" type="submit">Отправить</button>
+          </div>
         </form>
       </div>
     </div>
